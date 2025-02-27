@@ -1,0 +1,62 @@
+
+
+// Beginner Level (Strings):
+// 1. Find Unique Characters in a String
+// Identify all unique characters in a string.
+
+// Input: "hello"
+// Output: ["h", "e", "o"]
+// function findUniqueChars(str) {
+//     return str.split("").filter(char => str.indexOf(char) === str.lastIndexOf(char));
+// }
+
+// console.log(findUniqueChars("hello")); // Output: ["h", "e", "o"]
+
+// 2. Reverse Words in a Sentence
+// Reverse the words in a sentence while keeping their order.
+
+// Input: "Hello World"
+// Output: "olleH dlroW"
+// function reverseWords(sentence) {
+//     return sentence.split(" ").map(word => word.split("").reverse().join("")).join(" ");
+// }
+
+// console.log(reverseWords("Hello World")); // Output: "olleH dlroW"
+
+// 3. Count Characters in a String
+// Count the number of occurrences of each character in a string.
+
+// Input: "hello"
+// Output: { h: 1, e: 1, l: 2, o: 1 }
+// str="hello"
+// res=""
+// count=1
+// for(i=0;i<str.length;i++){
+//     if(str[i]==str[i+1]){
+//         count++
+//     }else{
+//         res=res+str[i]+count
+//         count=1
+//     }
+// }
+// console.log(res)
+
+// Intermediate Level (Strings): 
+
+// 1. Find the Length of the Longest Substring Without Repeating Characters
+
+// Input: "abcabcbb"
+// Output: 3 (The longest substring is "abc")
+// function longestUniqueSubstring(s) {
+//     let longest = 0, temp = "";
+//     for (let char of s) {
+//         if (temp.includes(char)) {
+//             temp = temp.slice(temp.indexOf(char) + 1);
+//         }
+//         temp += char;
+//         longest = Math.max(longest, temp.length);
+//     }
+//     return longest;
+// }
+
+// 
